@@ -1,0 +1,26 @@
+{
+  "name": "array.prototype.move",
+  "version": "0.0.1",
+  "description": "Array method to move an element of that array from one index to another.",
+  "main": "src/array-prototype-move.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brownieboy/array.prototype.move"
+  },
+  "bugs": "https://github.com/brownieboy/array.prototype.move/issues",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./tests"
+  },
+  "keywords": [
+    "Array"
+  ],
+  "author": {
+    "name": "Michael Brown",
+    "email": "brownieboy@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}

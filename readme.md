@@ -1,0 +1,3 @@
+#Array.protoype.move
+
+Details to follow...
