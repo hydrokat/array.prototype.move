@@ -1,6 +1,6 @@
 {
   "name": "array.prototype.move",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Array method to move an element of that array from one index to another.",
   "main": "src/array-prototype-move.js",
   "repository": {

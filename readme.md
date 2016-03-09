@@ -13,6 +13,7 @@ Install from npm, like so:
 Simply require or import the file.  There's no function exported, so no variable to assign to on the import/require.  The code modifies the Array.prototype via an IFFE (Immediately Invoked Function Expression).
 
 Import/require like so:
+
     import 'array.prototype.move';   	// ES6 syntax
     require('array.prototype.move');	// CommonJS syntax
 
@@ -20,6 +21,7 @@ You can also add it as a simple script tag if you're not using any module loader
 
 ##Syntax
 The syntax is:
+
     myArray.move(moveFromPosition, moveToPosition)
 
 where:
@@ -37,6 +39,7 @@ will move R2 to the start of the array.
 The method will also accept negative numbers for either of the "move" variables.  In that case, -1 is the last element of the array, -2 is the next to last element, and so on.
 
 Example 2:
+
     var simpleArray = ["Han Solo", "Luke Skywalker", "C3P0", "R2D2"];
     simpleArray.move(0, -1);
 
