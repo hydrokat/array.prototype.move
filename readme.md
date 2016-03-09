@@ -25,9 +25,9 @@ The syntax is:
     myArray.move(moveFromPosition, moveToPosition)
 
 where:
-	* `myArray` is your array.  It can be an array of objects, as well as an array of primitives (strings, numbers etc).
-	* `moveFromPosition` is the index of the array element that you want to move, where zero is the first element.
-	* `moveToPosition` is the index of the arra where you want the element that you're moving to end up.
+* `myArray` is your array.  It can be an array of objects, as well as an array of primitives (strings, numbers etc).
+* `moveFromPosition` is the index of the array element that you want to move, where zero is the first element.
+* `moveToPosition` is the index of the array where you want the element that you're moving to end up.
 
 Example 1:
 
@@ -60,5 +60,5 @@ To run the test suite.
 
 
 ##Acknowlegements
-Taken from Reid's accepted answer from [the most popuplar stackoverlow post on this topic](http://stackoverflow.com/questions/5306680/move-an-array-element-from-one-array-position-to-another).  All credit goes to Reid.  I've not changed his code at all.
+Taken from Reid's accepted answer from [the most popular stackoverlow post on this topic](http://stackoverflow.com/questions/5306680/move-an-array-element-from-one-array-position-to-another).  All credit goes to Reid.  I've not changed his code at all.
 
