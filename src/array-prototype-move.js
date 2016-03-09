@@ -18,5 +18,5 @@
         return this; // for testing purposes
     };
   }
-})();
+})(this);
 

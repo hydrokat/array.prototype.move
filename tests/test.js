@@ -20,7 +20,7 @@ describe("Simple array tests", function() {
 });
 
 
-var objectArray = [{ name: "Han Solo", weapon: "blaster" }, { name: "Luke Skywalker", weapon: "lightsabre" }, { name: "Obi-Wan Kenobi", weapon: "lightsabre" }, { name: "Darth Vader", wepaon: "lightsabre" }, { name: "Chewbacca", weapon: "bowcaster" }, { name: "C3P0" }, { name: "R2D2" }];
+var objectArray = [{ name: "Han Solo", weapon: "blaster" }, { name: "Luke Skywalker", weapon: "lightsabre" }, { name: "Obi-Wan Kenobi", weapon: "lightsabre" }, { name: "Darth Vader", weapon: "lightsabre" }, { name: "Chewbacca", weapon: "bowcaster" }, { name: "C3P0" }, { name: "R2D2" }];
 
 
 describe("Object array tests", function() {
@@ -30,9 +30,9 @@ describe("Object array tests", function() {
         expect(objectArray[0].name === "C3P0" && objectArray[1].name === "R2D2").to.be.true;
     });
 
-    it("should move Han to the end, via a negative number", function() {
+    it("should move Han to the end, still with his blaster, via a negative number", function() {
         objectArray.move(2, -1);
-        expect(objectArray[6].name === "Han Solo").to.be.true;
+        expect(objectArray[6].name === "Han Solo" && objectArray[6].weapon === "blaster").to.be.true;
     });
 });
 
