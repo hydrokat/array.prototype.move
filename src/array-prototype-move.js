@@ -2,6 +2,9 @@
 (function() {
   if(!Array.prototype.move) {
     Array.prototype.move = function (old_index, new_index) {
+        if ( this.length === 0 ) {
+            return this;
+        }
         while (old_index < 0) {
             old_index += this.length;
         }
