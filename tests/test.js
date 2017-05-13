@@ -36,3 +36,13 @@ describe("Object array tests", function() {
     });
 });
 
+var emptyArray = [];
+describe("Moving within an empty array", function() {
+    it("should return the same (empty) array for a negative new number move", function() {
+        emptyArray.move(1, -1);
+        expect(emptyArray).to.be.empty;
+    });
+});
+
+
+
