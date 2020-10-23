@@ -5,19 +5,35 @@
         if ( this.length === 0 ) {
             return this;
         }
-        while (old_index < 0) {
-            old_index += this.length;
+        
+        this.splice(new_index, 0, this.splice(this[old_index - 1], 1)[0]);
+      
+        return this; // for testing purposes
+    };
+  }
+  
+  if(!Array.prototype.moveElement) {
+    Array.prototype.moveElement = function (element, new_index) {
+        if ( this.length === 0 ) {
+            return this;
         }
-        while (new_index < 0) {
-            new_index += this.length;
+        
+        this.splice(new_index, 0, this.splice(this.indexOf(element), 1)[0]);
+      
+        return this; // for testing purposes
+    };
+  }
+  
+  if(!Array.prototype.swap) {
+    Array.prototype.swap = function (toSwapIndex, swapToIndex) {
+        if ( this.length === 0 ) {
+            return this;
         }
-        if (new_index >= this.length) {
-            var k = new_index - this.length;
-            while ((k--) + 1) {
-                this.push(undefined);
-            }
-        }
-        this.splice(new_index, 0, this.splice(old_index, 1)[0]);
+        
+        var temp = this[swapToIndex];
+        this[swapToIndex] = this[toSwapIndex];
+        this[toSwapIndex] = temp;
+      
         return this; // for testing purposes
     };
   }
